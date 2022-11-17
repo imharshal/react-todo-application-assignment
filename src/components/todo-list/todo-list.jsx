@@ -7,7 +7,9 @@ export const TodoList = () => {
   const { todos, setTodos } = React.useContext(TodosContext);
 
   const handleDelete = (id) => {
-    // Fix an ability to delete task
+    // Added an ability to delete task
+    const updatedTodos = todos.filter((todo) => todo.id !== id);
+    setTodos(updatedTodos);
   };
 
   const toggleCheck = (id) => {
