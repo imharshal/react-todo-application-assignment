@@ -41,6 +41,8 @@ const todosTemplate = [
 export const App = () => {
   const [todos, setTodos] = React.useState([]);
 
+  // displaying the todos template the todo list
+  React.useEffect(() => { setTodos(todosTemplate); }, []);
   return (
     <div className="root">
       <TodosContext.Provider value={{ todos, setTodos }}>
