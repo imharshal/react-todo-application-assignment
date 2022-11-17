@@ -15,6 +15,6 @@ The working example can be found at https://github.com/andrewborisov/react-todo-
 
 ## Available Scripts
 
-Use 'npm install' to install dependencies
+Use `npm install` to install dependencies
 Use `npm start` to run project.
 Visit `http://localhost:3000` to see the live application
