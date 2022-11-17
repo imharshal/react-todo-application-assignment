@@ -14,6 +14,8 @@ export const TodoForm = () => {
       checked: false,
     };
     setTodos((prevTodos) => [...prevTodos, newTodoItem]);
+    // Adding an ability to clear input box on adding todo
+    setTask(' ');
   };
 
   const handleKeyUp = (e) => {
