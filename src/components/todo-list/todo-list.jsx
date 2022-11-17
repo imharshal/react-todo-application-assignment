@@ -11,7 +11,11 @@ export const TodoList = () => {
   };
 
   const toggleCheck = (id) => {
-    // Fix an ability to toggle task
+    // Added an ability to toggle task
+    const updatedTodos = todos.map((todo) => ((todo.id === id)
+        ? { ...todo, checked: !todo.checked }
+        : todo));
+    setTodos(updatedTodos);
   };
 
   const handleKeyUp = (e, id) => {
